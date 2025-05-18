@@ -1,65 +1,42 @@
-<!DOCTYPE html>
-<html lang="ka">
-<head>
-  <meta charset="UTF-8">
-  <title>ნამდვილი მეგრული ხაჭაპური</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: sans-serif;
-      background: linear-gradient(120deg, #fff3e6, #ffe0cc);
-      text-align: center;
-      padding: 40px;
-      color: #333;
-    }
-    h1 {
-      color: #b34700;
-      font-size: 2.4em;
-    }
-    img {
-      width: 350px;
-      border-radius: 16px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      margin: 20px 0;
-    }
-    .section {
-      max-width: 600px;
-      margin: auto;
-      margin-top: 30px;
-    }
-    h2 {
-      color: #994d00;
-      font-size: 1.5em;
-    }
-    p {
-      font-size: 1.1em;
-    }
-    footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #888;
-    }
-  </style>
-</head>
-<body>
-  <h1>ნამდვილი მეგრული ხაჭაპური</h1>
-  <img src="khachapuri.jpg" alt="Megrelian Khachapuri">
+import React from "react";
 
-  <div class="section">
-    <h2>ქართული</h2>
-    <p>ნამდვილი მეგრული ხაჭაპური — გემო, რომელიც ბავშვობიდან გაგახსენდება. ყველით დაფარული, სურნელოვანი და უგემრიელესი!</p>
-  </div>
+export default function KhachapuriPage() { return ( <div className="bg-white text-gray-900 font-sans"> {/* Hero Section */} <section className="bg-[url('https://images.unsplash.com/photo-1613141411980-4cc5d6fa493b')] bg-cover bg-center h-[80vh] flex items-center justify-center"> <div className="bg-black bg-opacity-50 p-6 rounded-xl text-center text-white"> <h1 className="text-5xl font-bold mb-4">ნამდვილი მეგრული ხაჭაპური</h1> <p className="text-xl mb-6">გემო რომელიც ბავშვობას გაგახსენებს</p> <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-full">დაგვიკავშირდი</button> </div> </section>
 
-  <div class="section">
-    <h2>Polski</h2>
-    <p>Chaczapuri megrelińskie – tradycyjna gruzińska potrawa z serem. Rozkosz dla każdego smakosza!</p>
-  </div>
+{/* Menu Section */}
+  <section className="py-16 px-6 max-w-5xl mx-auto">
+    <h2 className="text-3xl font-bold mb-8 text-center">მენიუ</h2>
+    <div className="grid md:grid-cols-2 gap-8">
+      <div className="border p-4 rounded-xl shadow">
+        <img src="https://images.unsplash.com/photo-1589307004391-0903b63b1b5b" alt="მეგრული ხაჭაპური" className="w-full h-64 object-cover rounded-lg mb-4" />
+        <h3 className="text-xl font-semibold">მეგრული ხაჭაპური</h3>
+        <p className="text-sm text-gray-700">ყველი შიგნით და ზემოდან — კლასიკური მეგრული რეცეპტით</p>
+        <p className="mt-2 font-bold">₾12.00</p>
+      </div>
+      {/* Add more menu items as needed */}
+    </div>
+  </section>
 
-  <div class="section">
-    <h2>English</h2>
-    <p>Megrelian Khachapuri – a golden cheese-filled Georgian delight. Soft inside, crispy outside, unforgettable taste!</p>
-  </div>
+  {/* About Section */}
+  <section className="bg-gray-100 py-16 px-6">
+    <div className="max-w-4xl mx-auto text-center">
+      <h2 className="text-3xl font-bold mb-4">ჩვენს შესახებ</h2>
+      <p className="text-gray-700 text-lg">
+        ჩვენ ვაცოცხლებთ ტრადიციულ მეგრულ რეცეპტებს ნატურალური ინგრედიენტებითა და გულით. თითოეული ხაჭაპური არის ხელით მომზადებული სიყვარულით.
+      </p>
+    </div>
+  </section>
 
-  <footer>© 2025 Hugo1979 • GitHub Pages</footer>
-</body>
-</html>
+  {/* Contact Section */}
+  <section className="py-16 px-6 max-w-3xl mx-auto">
+    <h2 className="text-3xl font-bold mb-8 text-center">დაგვიკავშირდი</h2>
+    <form className="grid gap-4">
+      <input type="text" placeholder="სახელი" className="border rounded p-3" />
+      <input type="email" placeholder="ელ.ფოსტა" className="border rounded p-3" />
+      <textarea placeholder="შეტყობინება" className="border rounded p-3" rows="4"></textarea>
+      <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-full">გაგზავნა</button>
+    </form>
+  </section>
+</div>
+
+); }
+
