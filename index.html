@@ -1,42 +1,52 @@
-import React from "react";
-
-export default function KhachapuriPage() { return ( <div className="bg-white text-gray-900 font-sans"> {/* Hero Section */} <section className="bg-[url('https://images.unsplash.com/photo-1613141411980-4cc5d6fa493b')] bg-cover bg-center h-[80vh] flex items-center justify-center"> <div className="bg-black bg-opacity-50 p-6 rounded-xl text-center text-white"> <h1 className="text-5xl font-bold mb-4">ნამდვილი მეგრული ხაჭაპური</h1> <p className="text-xl mb-6">გემო რომელიც ბავშვობას გაგახსენებს</p> <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-full">დაგვიკავშირდი</button> </div> </section>
-
-{/* Menu Section */}
-  <section className="py-16 px-6 max-w-5xl mx-auto">
-    <h2 className="text-3xl font-bold mb-8 text-center">მენიუ</h2>
-    <div className="grid md:grid-cols-2 gap-8">
-      <div className="border p-4 rounded-xl shadow">
-        <img src="https://images.unsplash.com/photo-1589307004391-0903b63b1b5b" alt="მეგრული ხაჭაპური" className="w-full h-64 object-cover rounded-lg mb-4" />
-        <h3 className="text-xl font-semibold">მეგრული ხაჭაპური</h3>
-        <p className="text-sm text-gray-700">ყველი შიგნით და ზემოდან — კლასიკური მეგრული რეცეპტით</p>
-        <p className="mt-2 font-bold">₾12.00</p>
-      </div>
-      {/* Add more menu items as needed */}
-    </div>
-  </section>
-
-  {/* About Section */}
-  <section className="bg-gray-100 py-16 px-6">
-    <div className="max-w-4xl mx-auto text-center">
-      <h2 className="text-3xl font-bold mb-4">ჩვენს შესახებ</h2>
-      <p className="text-gray-700 text-lg">
-        ჩვენ ვაცოცხლებთ ტრადიციულ მეგრულ რეცეპტებს ნატურალური ინგრედიენტებითა და გულით. თითოეული ხაჭაპური არის ხელით მომზადებული სიყვარულით.
-      </p>
-    </div>
-  </section>
-
-  {/* Contact Section */}
-  <section className="py-16 px-6 max-w-3xl mx-auto">
-    <h2 className="text-3xl font-bold mb-8 text-center">დაგვიკავშირდი</h2>
-    <form className="grid gap-4">
-      <input type="text" placeholder="სახელი" className="border rounded p-3" />
-      <input type="email" placeholder="ელ.ფოსტა" className="border rounded p-3" />
-      <textarea placeholder="შეტყობინება" className="border rounded p-3" rows="4"></textarea>
-      <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-full">გაგზავნა</button>
-    </form>
-  </section>
-</div>
-
-); }
-
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ქართული გემო</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #fffaf3;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #f5deb3;
+            padding: 1rem;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin: 1rem auto;
+            display: block;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .button {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            background-color: #e07b39;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        .button:hover {
+            background-color: #cf6e30;
+        }
+    </style>
+</head>
+<body>
+    <header>ქართული გემო</header>
+    <main>
+        <img src="banner.png" alt="მეგრული ხაჭაპური" />
+        <a class="button" href="https://wa.me/" target="_blank">შეუკვეთე ახლავე</a>
+    </main>
+</body>
+</html>
